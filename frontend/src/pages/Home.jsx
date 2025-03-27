@@ -8,7 +8,8 @@ const Home = () => {
         Capitol Music Group Skills Test
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        I really enjoyed working on this and kept scaling up. On this site you can find my answer to all three parts of the UMG Software Engineering skills test.
+        I really enjoyed working on this and scaled up a bit so all three parts(Functionalities) are fully implemented. 
+        On this site you can find my answer to all three parts of the UMG Software Engineering skills test.
       </Typography>
       <Typography variant="body1" sx={{ mb: 4 }}>
         You can also find my implementation notes with code references for each part.
@@ -105,6 +106,41 @@ const Home = () => {
             </Button>
             <Button component={Link} to="/part-3-notes" size="small" color="secondary">
               Notes
+            </Button>
+          </CardActions>
+        </Card>
+
+        {/* GitHub Source Card */}
+        <Card
+          sx={{
+            width: 300,
+            border: '1px solid #ccc',
+            mt: 3,
+            transition: '0.3s',
+            '&:hover': {
+              boxShadow: 4,
+              borderColor: '#000',
+            },
+          }}
+        >
+          <CardContent>
+            <Typography variant="h6" gutterBottom>
+              💻 Source Code on GitHub
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              View the full repository for this project on GitHub, including frontend, backend, and notes.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button
+              size="small"
+              color="primary"
+              component="a"
+              href="https://github.com/Buck0134/umg-skills-test"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Repo
             </Button>
           </CardActions>
         </Card>

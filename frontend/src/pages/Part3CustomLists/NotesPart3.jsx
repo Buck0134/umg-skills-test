@@ -33,14 +33,6 @@ const Part3Notes = () => {
       <Typography variant="h6" gutterBottom>
         📊 BigQuery Table Schemas
       </Typography>
-
-      <Link
-            href="https://github.com/buckyyu/umg-skills-test/blob/main/frontend/src/pages/Part3CustomLists/index.jsx"
-            target="_blank"
-            rel="noopener"
-          >
-            Github Source Code - Big Query CRUD service 
-        </Link> 
       <Typography variant="body2" sx={{ mb: 3 }}>
         The following tables support managing artists, users, custom lists, and the many-to-many relationship between lists and artists.
       </Typography>
@@ -127,6 +119,14 @@ const Part3Notes = () => {
         </Grid>
       </Grid>
 
+      <Link
+            href="https://github.com/Buck0134/umg-skills-test/blob/main/backend/services/bigquery_artist_list.py"
+            target="_blank"
+            rel="noopener"
+          >
+            Github Source Code - Big Query CRUD service 
+        </Link> 
+
       <Divider sx={{ my: 3 }} />
 
       <Typography variant="h6">🔧 2. API Endpoints</Typography>
@@ -145,6 +145,14 @@ const Part3Notes = () => {
       <Typography mt={2}>
         Data is validated using <code>Pydantic</code> models and queries are parameterized using BigQuery's job config to ensure safety.
       </Typography>
+
+      <Link
+            href="https://github.com/Buck0134/umg-skills-test/blob/main/backend/routers/part3_artist_list_routes.py"
+            target="_blank"
+            rel="noopener"
+          >
+            Github Source Code -Part 3 API Routes 
+        </Link> 
 
       <Divider sx={{ my: 3 }} />
 
@@ -166,8 +174,16 @@ const Part3Notes = () => {
       <Divider sx={{ my: 3 }} />
       <Typography variant="h6">🧩 How the three parts work together?</Typography>
       <Typography mt={2}>
-      All three components work together in a modular, full-stack pipeline: the React frontend allows users to select an account, view or create lists, and manage artists through an iTunes-powered search interface. The selected actions are routed through FastAPI endpoints that validate and handle the data, interfacing directly with BigQuery for persistent storage across normalized tables (users, artists, lists, artist_in_list). This structure ensures clear separation of concerns, with real-time feedback, scalable query design, and traceable user actions throughout the stack.
+      All three components work together in a modular, full-stack pipeline: the React frontend allows users to select an account, view or create lists, and manage artists through an iTunes-powered search interface. The selected actions are routed through FastAPI endpoints that validate and handle the data, interfacing directly with BigQuery for persistent storage across normalized tables (users, artists, lists, artist_in_list).
       </Typography>
+
+      <Link
+            href="https://github.com/Buck0134/umg-skills-test/blob/main/frontend/src/pages/Part3CustomLists/index.jsx"
+            target="_blank"
+            rel="noopener"
+          >
+            Github Source Code -Part 3 React Components and Page 
+        </Link> 
 
       <Divider sx={{ my: 3 }} />
       <Typography variant="h6">🧩 Integration Flow</Typography>
@@ -209,39 +225,6 @@ const Part3Notes = () => {
         <li>🔑 <strong>Safe queries</strong> – Parameterized queries prevent SQL injection</li>
         <li>🔐 <strong>JWT-ready</strong> – Current user system supports future token-based auth</li>
         <li>🧠 <strong>Optional base64</strong> for lightweight obfuscation of sensitive values</li>
-      </ul>
-
-      <Divider sx={{ my: 3 }} />
-
-      <Typography variant="h6">📎 GitHub Source Code</Typography>
-      <ul>
-        <li>
-          <Link
-            href="https://github.com/buckyyu/umg-skills-test/blob/main/backend/routes/part3_artist_list_routes.py"
-            target="_blank"
-            rel="noopener"
-          >
-            FastAPI Artist List Routes
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="https://github.com/buckyyu/umg-skills-test/blob/main/backend/services/bigquery_artist_list.py"
-            target="_blank"
-            rel="noopener"
-          >
-            FastAPI BigQuery Services
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="https://github.com/buckyyu/umg-skills-test/blob/main/frontend/src/pages/Part3CustomLists/index.jsx"
-            target="_blank"
-            rel="noopener"
-          >
-            React Artist List Page
-          </Link>
-        </li>
       </ul>
     </Box>
   );

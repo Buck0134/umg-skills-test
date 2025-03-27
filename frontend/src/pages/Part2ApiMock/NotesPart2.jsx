@@ -95,7 +95,7 @@ const Part2Notes = () => {
       <ul>
         <li>
           <Link
-            href="https://github.com/buckyyu/umg-skills-test/blob/main/backend/routes/submit_data_api.py"
+            href="https://github.com/Buck0134/umg-skills-test/blob/main/backend/routers/submit_data_api.py"
             target="_blank"
             rel="noopener"
           >
@@ -104,7 +104,7 @@ const Part2Notes = () => {
         </li>
         <li>
           <Link
-            href="https://github.com/buckyyu/umg-skills-test/blob/main/backend/services/submit_data_api_bq.py"
+            href="https://github.com/Buck0134/umg-skills-test/blob/main/backend/services/submit_data_api_bq.py"
             target="_blank"
             rel="noopener"
           >
@@ -113,7 +113,7 @@ const Part2Notes = () => {
         </li>
         <li>
           <Link
-            href="https://github.com/buckyyu/umg-skills-test/blob/main/frontend/src/pages/Part2ApiMock/index.jsx"
+            href="https://github.com/Buck0134/umg-skills-test/blob/main/frontend/src/pages/Part2ApiMock/NotesPart2.jsx"
             target="_blank"
             rel="noopener"
           >

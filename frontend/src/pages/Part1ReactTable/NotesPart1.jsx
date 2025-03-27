@@ -7,13 +7,22 @@ const Part1ImplementationNotes = () => {
       <Typography variant="h4" gutterBottom>
         📝 Implementation Notes – Part 1
       </Typography>
-      
+
       <Typography variant="body1" gutterBottom>
         ✅ <strong>Goal:</strong> Create a simple React table component that fetches and displays JSON data returned from an API endpoint.
       </Typography>
 
       <Typography variant="body1" gutterBottom>
-        This component fulfills the requirement of rendering a React table with data from an external API. We used the iTunes RSS Feed API to retrieve the top 10 pop songs and presented the data using Material UI’s <code>Table</code> layout, customized for clarity and visual appeal.
+        This component fulfills the requirement of rendering a React table with data from an external API. We used the{' '}
+        <Link 
+          href="https://performance-partners.apple.com/search-api" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          underline="hover"
+        >
+          iTunes RSS Feed API
+        </Link>{' '}
+        to retrieve the top 10 pop songs and presented the data using Material UI’s <code>Table</code> layout, customized for clarity and visual appeal.
       </Typography>
 
       <Box mt={2} mb={4}>
@@ -96,7 +105,7 @@ const Part1ImplementationNotes = () => {
       <Typography variant="h6" gutterBottom>
         🔗 GitHub Source Code
       </Typography>
-      <Link href="https://github.com/buckyyu/umg-skills-test/blob/main/frontend/src/pages/Part1ReactTable/index.jsx" target="_blank" rel="noopener">
+      <Link href="https://github.com/Buck0134/umg-skills-test/blob/main/frontend/src/pages/Part1ReactTable/index.jsx" target="_blank" rel="noopener">
         React Table – iTunes API Implementation
       </Link>
     </Box>
