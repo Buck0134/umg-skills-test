@@ -145,7 +145,7 @@ const Home = () => {
               💻 Source Code on GitHub
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              View the full repository for this project on GitHub, including frontend, backend, and notes.
+              View the full repository for this project on GitHub, including frontend, backend, and notes. You can also clone the repo and run it on your local machine. 
             </Typography>
           </CardContent>
           <CardActions>
