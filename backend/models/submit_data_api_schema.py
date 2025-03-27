@@ -1,3 +1,5 @@
+# part 2
+
 from pydantic import BaseModel, Field, EmailStr
 from typing import Optional
 
@@ -8,6 +10,6 @@ class SubmissionData(BaseModel):
     monthly_music_hours: Optional[int] = Field(
         default=None,
         ge=0,
-        le=500,
+        le=720,
         description="Estimated number of hours spent listening to music per month"
     )

@@ -1,6 +1,9 @@
-import { Box, Typography, Paper, Link, Divider } from '@mui/material';
+import { Box, Typography, Paper, Link, Divider, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const Part2Notes = () => {
+    const navigate = useNavigate();
+
   return (
     <Box p={4} maxWidth="900px" mx="auto">
       <Typography variant="h4" gutterBottom>
@@ -17,6 +20,18 @@ const Part2Notes = () => {
       <Typography>
         Implement a FastAPI endpoint that accepts and validates user input and stores the validated data in a BigQuery table. The focus is on proper validation and error handling.
       </Typography>
+
+      <Box my={2}>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => navigate('/submit-data')}
+          sx={{ textTransform: 'none' }}
+        >
+          🎵 Try and Test Live Part 2 Feature
+        </Button>
+      </Box>
+      <Divider sx={{ my: 3 }} />
 
       <Divider sx={{ my: 3 }} />
 

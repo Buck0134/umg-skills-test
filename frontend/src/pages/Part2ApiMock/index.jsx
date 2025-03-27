@@ -116,10 +116,10 @@ const Part2ApiMock = () => {
   const hourSuggestions = [
     { label: '100 (Valid)', value: '100' },
     { label: '0 (Valid - Edge Case)', value: '0' },
-    { label: '500 (Valid - Max Limit)', value: '500' },
+    { label: '720 (Valid - Max Limit)', value: '720' },
     { label: '-1 (Too low)', value: '-1' },
-    { label: '666 (Too high)', value: '666' },
-    { label: 'Try your own input', value: '' },
+    { label: '999 (Too high)', value: '999' },
+    { label: 'Try your own input (type manually)', value: '' }
   ];
 
 
@@ -147,7 +147,7 @@ const Part2ApiMock = () => {
           <li><strong>Full Name</strong>: Required. Must be between 2 and 100 characters.</li>
           <li><strong>Email</strong>: Required. Must be a valid email address.</li>
           <li><strong>Favorite Genre</strong>: Optional. Maximum length of 25 characters.</li>
-          <li><strong>Monthly Music Hours</strong>: Required. Must be an integer between 0 and 500.</li>
+          <li><strong>Monthly Music Hours</strong>: Required. Must be an integer between 0 and 720.</li>
         </Box>
     
         {/* Form */}

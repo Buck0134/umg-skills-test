@@ -122,7 +122,7 @@ const ArtistSearchInput = ({ onArtistAdd }) => {
 };
 
 
-const ArtistCard = ({ artist, onDelete, list_id }) => {
+const ArtistCard = ({ artist, onDelete, list_id, setModalMessage, setModalOpen }) => {
   // Derive the artist's display name from available fields.
   const firstName = artist.first_name || artist.firstName || '';
   const lastName = artist.last_name || artist.lastName || '';
@@ -165,13 +165,24 @@ const ArtistCard = ({ artist, onDelete, list_id }) => {
           params: { list_id: list_id, artist_id: artist.artist_id }
         });
         if (response.status === 200) {
-          // Notify parent that deletion was successful.
           if (onDelete) {
             onDelete(artist.artist_id);
           }
         }
       } catch (err) {
-        console.error("Error deleting artist:", err);
+        const rawMessage = err?.response?.data?.detail || err.message;
+    
+        if (
+          rawMessage.includes("would affect rows in the streaming buffer")
+        ) {
+          setModalMessage(
+            "⚠️ This artist was added recently and is still in BigQuery’s streaming buffer. Please try deleting again later (usually within 90 minutes). Try delete something I created previously!"
+          );
+        } else {
+          setModalMessage(`Error deleting artist: ${rawMessage}`);
+        }
+    
+        setModalOpen(true);
       }
     };
 
@@ -346,6 +357,8 @@ const ListDetailView = ({ list, onBack, lists, onSelectList, user }) => {
                 artist={artist}
                 onDelete={handleDeleteArtist}
                 list_id = {list.list_id}
+                setModalMessage = {setModalMessage}
+                setModalOpen = {setModalOpen}
               />
               ))
             ) : (

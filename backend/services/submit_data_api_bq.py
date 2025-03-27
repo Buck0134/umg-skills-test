@@ -1,3 +1,5 @@
+# part 2
+
 from models.submit_data_api_schema import SubmissionData
 from google.cloud import bigquery
 from dotenv import load_dotenv

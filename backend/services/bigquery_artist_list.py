@@ -1,3 +1,5 @@
+# part 3
+
 from google.cloud import bigquery
 from datetime import datetime
 import os
