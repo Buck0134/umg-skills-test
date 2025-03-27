@@ -1,27 +1,113 @@
-import { Typography, Box, Button } from '@mui/material';
+import { Typography, Box, Card, CardContent, Button, CardActions } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <Box sx={{ p: 4 }}>
       <Typography variant="h4" gutterBottom>
-        Captial Music Group Skills Test
+        Capitol Music Group Skills Test
       </Typography>
-      <Typography variant="body1" sx={{ mb: 3 }}>
-        Welcome! This is a demonstration of my solution for the Universal Music Group Software Engineering skills test.
-        Use the navigation bar to explore each of the three tasks:
+      <Typography variant="body1" sx={{ mb: 2 }}>
+        I really enjoyed working on this and kept scaling up. On this site you can find my answer to all three parts of the UMG Software Engineering skills test.
+      </Typography>
+      <Typography variant="body1" sx={{ mb: 4 }}>
+        You can also find my implementation notes with code references for each part.
       </Typography>
 
-      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, width: 'fit-content' }}>
-        <Button variant="outlined" component={Link} to="/part-1-react-table">
-          Part 1 – React Table (iTunes API)
-        </Button>
-        <Button variant="outlined" component={Link} to="/submit-data">
-          Part 2 – API + BigQuery (Mock)
-        </Button>
-        <Button variant="outlined" component={Link} to="/custom-lists">
-          Part 3 – Custom Artist Lists
-        </Button>
+      <Box sx={{ display: 'flex', flexDirection: 'row', gap: 3, justifyContent: 'center', flexWrap: 'wrap' }}>
+        {/* Part 1 Card */}
+        <Card
+          sx={{
+            width: 300,
+            border: '1px solid #ccc',
+            transition: '0.3s',
+            '&:hover': {
+              boxShadow: 4,
+              borderColor: '#000',
+            },
+          }}
+        >
+          <CardContent>
+            <Typography variant="h6" gutterBottom>
+              🎧 Part 1 – React Table (iTunes API)
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              A React table that fetches live JSON data from Apple’s iTunes RSS API.
+              Includes cover art, artist info, and iTunes links.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button component={Link} to="/part-1-react-table" size="small">
+              View Part 1
+            </Button>
+            <Button component={Link} to="/part-1-notes" size="small" color="secondary">
+              Notes
+            </Button>
+          </CardActions>
+        </Card>
+
+        {/* Part 2 Card */}
+        <Card
+          sx={{
+            width: 300,
+            border: '1px solid #ccc',
+            transition: '0.3s',
+            '&:hover': {
+              boxShadow: 4,
+              borderColor: '#000',
+            },
+          }}
+        >
+          <CardContent>
+            <Typography variant="h6" gutterBottom>
+              🧾 Part 2 – API + BigQuery (Mock Submission)
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              A FastAPI endpoint validates form input and saves it to BigQuery.
+              Handles real-time feedback with full error reporting and live query display.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button component={Link} to="/submit-data" size="small">
+              View Part 2
+            </Button>
+            <Button component={Link} to="/part-2-notes" size="small" color="secondary">
+              Notes
+            </Button>
+          </CardActions>
+        </Card>
+
+        {/* Part 3 Card */}
+        <Card
+          sx={{
+            width: 300,
+            border: '1px solid #ccc',
+            transition: '0.3s',
+            '&:hover': {
+              boxShadow: 4,
+              borderColor: '#000',
+            },
+          }}
+        >
+          <CardContent>
+            <Typography variant="h6" gutterBottom>
+              🎵 Part 3 – Custom Artist Lists
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Multi-user artist list manager with BigQuery backend.  
+              Create/view lists, search iTunes for artists, and manage selections.
+              Built with modular API and secure design in mind.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button component={Link} to="/custom-lists" size="small">
+              View Part 3
+            </Button>
+            <Button component={Link} to="/part-3-notes" size="small" color="secondary">
+              Notes
+            </Button>
+          </CardActions>
+        </Card>
       </Box>
     </Box>
   );
