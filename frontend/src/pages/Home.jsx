@@ -8,11 +8,24 @@ const Home = () => {
         Capitol Music Group Skills Test
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        I really enjoyed working on this and scaled up a bit so all three parts(Functionalities) are fully implemented. 
+        Hi it's <strong>Bucky</strong>! I really enjoyed working on this and scaled up a bit so all three parts(functionalities) are fully implemented. 
         On this site you can find my answer to all three parts of the UMG Software Engineering skills test.
       </Typography>
       <Typography variant="body1" sx={{ mb: 4 }}>
         You can also find my implementation notes with code references for each part.
+      </Typography>
+
+      <Typography variant="body2" sx={{ mb: 4 }}>
+        Requirements Recap: 
+        
+        Create a simple react table component that fetches and displays JSON data returned from an API endpoint
+        Implement an API endpoint that accepts and validates user input and stores the validated data in a BigQuery table. Focus on proper validation and error handling.
+        You need to implement a feature that allows multiple users to save artists of interest to custom lists. Outline the approach you would take and write snippets for:
+        The BigQuery table schema(s) to store list information
+        An API endpoint to fetch data from the above table(s)
+        A React component that displays the fetched data and allows for the deletion or addition of artists
+         
+        Explain how these three elements would work together and add any additional considerations for performance or security
       </Typography>
 
       <Box sx={{ display: 'flex', flexDirection: 'row', gap: 3, justifyContent: 'center', flexWrap: 'wrap' }}>
