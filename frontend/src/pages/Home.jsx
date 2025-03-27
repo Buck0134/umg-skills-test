@@ -16,16 +16,20 @@ const Home = () => {
       </Typography>
 
       <Typography variant="body2" sx={{ mb: 4 }}>
-        Requirements Recap: 
-        
-        Create a simple react table component that fetches and displays JSON data returned from an API endpoint
-        Implement an API endpoint that accepts and validates user input and stores the validated data in a BigQuery table. Focus on proper validation and error handling.
-        You need to implement a feature that allows multiple users to save artists of interest to custom lists. Outline the approach you would take and write snippets for:
-        The BigQuery table schema(s) to store list information
-        An API endpoint to fetch data from the above table(s)
-        A React component that displays the fetched data and allows for the deletion or addition of artists
-         
-        Explain how these three elements would work together and add any additional considerations for performance or security
+        Requirements Recap:
+        <ul>
+          <li><strong>Part 1</strong>: Create a simple React table component that fetches and displays JSON data returned from an API endpoint</li>
+          <li><strong>Part 2</strong>: Implement an API endpoint that accepts and validates user input and stores the validated data in a BigQuery table, focusing on proper validation and error handling</li>
+          <li>
+            <strong>Part 3</strong>: Implement a feature that allows multiple users to save artists of interest to custom lists. Include:
+            <ul>
+              <li>The BigQuery table schema(s) to store list information</li>
+              <li>An API endpoint to fetch data from the above table(s)</li>
+              <li>A React component that displays the fetched data and allows for the deletion or addition of artists</li>
+              <li>An explanation of how these three elements work together and any additional considerations for performance or security</li>
+            </ul>
+          </li>
+        </ul>
       </Typography>
 
       <Box sx={{ display: 'flex', flexDirection: 'row', gap: 3, justifyContent: 'center', flexWrap: 'wrap' }}>
