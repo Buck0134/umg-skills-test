@@ -5,13 +5,13 @@ const Home = () => {
   return (
     <Box sx={{ p: 4 }}>
       <Typography variant="h4" gutterBottom>
-        Capitol Music Group Skills Test
+        Bucky's Capitol Music Group Skills Test
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        Hi it's <strong>Bucky</strong>! I really enjoyed working on this and scaled up a bit so all three parts(functionalities) are fully implemented. 
-        On this site you can find my answer to all three parts of the UMG Software Engineering skills test.
+        Hi it's <strong>Bucky</strong>! I really enjoyed working on this and scaled up a bit so all three parts(functionalities) are fully implemented. Hope you would enjoy reviewing this as much as I coded it. 
       </Typography>
       <Typography variant="body1" sx={{ mb: 4 }}>
+        On this site you can find my answer to all three parts of the UMG Software Engineering skills test.
         You can also find my implementation notes with code references for each part.
       </Typography>
 
