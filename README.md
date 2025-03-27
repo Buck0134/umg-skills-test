@@ -31,15 +31,11 @@ chmod +x start.sh
 
 
 This will:
+- Download Google Cloud Secrets
 - Set up a Python virtual environment and install backend dependencies
 - Install frontend dependencies via `npm`
 - Start both servers concurrently
-
----
-
-## ⚠️ Credentials Notice
-
-A Google Cloud service account JSON file (`bigquery-key.json`) is temporarily included **only for demo purposes**. This is **not a best practice**, and the file should be removed in production environments or public-facing repositories.
+- Use Control C to exit the program
 
 ---
 
