@@ -24,7 +24,7 @@ This repo contains the frontend and backend implementations for all three tasks,
 
 To run the entire project locally (frontend + backend), simply clone this repo and run:
 
-Make sure the script has execute permissions:
+Make sure the script has execute permissions and also you have pip and npm installed on your machine:
 
 ```bash
 chmod +x start.sh
