@@ -1,3 +1,6 @@
+Please visit the deployed version of the app via: https://umg-deploy-frontend.onrender.com/
+
+
 # 🎶 Bucky's UMG Software Engineering Skills Test – Full-Stack Solution
 
 Welcome to the source code repository for my complete solution to the **Capital Music Group Software Engineering Skills Test**.
